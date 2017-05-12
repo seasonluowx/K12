@@ -97,22 +97,13 @@ const renderStackedItem = ({item}: { item: Item }) => {
 class FooterComponent extends React.PureComponent {
     render() {
         return (
-           /* <View style={styles.headerFooterContainer}>
+           <View style={styles.headerFooterContainer}>
                 <SeparatorComponent />
                 <View style={styles.headerFooter}>
                     <Text>LIST FOOTER</Text>
                 </View>
-            </View>*/
-        <View style={styles.headerFooterContainer}>
-            <View style={styles.headerFooter}>
-                <Icon name="search" size={15} style={styles.innerIcon}/>
-                <PlainInput></PlainInput>
-                <TouchableHighlight onPress={this.showMessage}>
-                    <Icon name="comments" size={20} />
-                </TouchableHighlight>
             </View>
-            <SeparatorComponent />
-        </View>
+
         );
     }
 }

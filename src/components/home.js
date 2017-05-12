@@ -10,6 +10,8 @@ import {FooterComponent,
     HeaderComponent,
     SeparatorComponent} from './js/ListExampleShared'
 
+import * as ModalExample from './base/modelExample';
+
 export default class MyProject extends Component {
     constructor(props) {
         super(props);
@@ -35,6 +37,7 @@ export default class MyProject extends Component {
 
     render() {
         return (
+            <view>
             <FlatList
                 data={[{id:1,title:'菜单1'}, {id:2,title:'菜单2'}, {id:3,title:'菜单3'}, {id:4,title:'菜单4'}, {id:5,title:'菜单5'}, {id:6,title:'菜单6'}]}
                 extraData={this.state}
@@ -43,6 +46,8 @@ export default class MyProject extends Component {
                 ListHeaderComponent={HeaderComponent}
                 ListFooterComponent={FooterComponent}
             />
+                <ModalExample></ModalExample>
+            </view>
         );
     }
 }
